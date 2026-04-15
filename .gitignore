@@ -1,0 +1,15 @@
+# Ignore the data folders (Enterprise best practice)
+data/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore virtual environments
+venv/
+env/
+.venv/
+
+# Ignore Mac system files (if you use a Mac)
+.DS_Store
