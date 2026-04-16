@@ -1,4 +1,4 @@
-# HMRC ESLM Friction Analyser 📊
+# ESLM Friction Analyser 📊
 
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
