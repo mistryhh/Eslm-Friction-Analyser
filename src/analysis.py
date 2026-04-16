@@ -53,7 +53,7 @@ def identify_friction_points(tickets, assets):
 
 def run_analysis_pipeline():
     """Executes the analysis pipeline and saves insights."""
-    print("🚀 Starting HMRC ESLM Analysis...")
+    print("🚀 Starting ESLM Analysis...")
     
     assets, tickets = load_cleaned_data()
     tickets = calculate_resolution_times(tickets)

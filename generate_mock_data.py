@@ -18,7 +18,7 @@ def generate_assets(num_assets=500):
         'ci_id': [f"CI-{1000 + i}" for i in range(num_assets)],
         'ci_type': [random.choice(ci_types) for _ in range(num_assets)],
         'environment': [random.choice(environments) for _ in range(num_assets)],
-        # Simulate missing owners (Data Quality Issue for HMRC to care about)
+        # Simulate missing owners (Data Quality Issue )
         'owner_email': [f"admin_{random.randint(1, 20)}@hmrc.gov.uk" if random.random() > 0.15 else np.nan for _ in range(num_assets)],
         'last_audited': [(datetime.now() - timedelta(days=random.randint(1, 365))).strftime('%Y-%m-%d') for _ in range(num_assets)]
     }
@@ -63,7 +63,7 @@ def generate_tickets(asset_ids, num_tickets=1000):
 
 # Run the generator
 if __name__ == "__main__":
-    print("Generating simulated HMRC Service Data...")
+    print("Generating simulated Service Data...")
     assets_df = generate_assets()
     generate_tickets(assets_df['ci_id'].tolist())
     print("Data generation complete. Check the 'data/raw/' folder.")

@@ -45,7 +45,7 @@ def clean_ticket_data(df):
 
 def run_ingestion_pipeline():
     """Executes the full ingestion and cleaning pipeline."""
-    print("🚀 Starting HMRC Data Ingestion Pipeline...")
+    print("🚀 Starting Data Ingestion Pipeline...")
     
     # Load
     raw_assets, raw_tickets = load_raw_data()
